@@ -21,12 +21,12 @@ context:
             name: Jason Hsu
             url: "http://www.jasonhsu.com"
         layout:
-            name: Generic Hyde Template
-            url: "https://github.com/jhsu802701/hyde-template"
+            name: Ruby on Racetracks
+            url: "https://github.com/jhsu802701/rubyonracetracks"
         project:
-            name: Hyde
-            url: "http://hyde.github.com"
-            install: "https://github.com/hyde/hyde#installation"
+            name: Ruby on Racetracks
+            url: "https://github.com/jhsu802701/rubyonracetracks"
+            install: "https://github.com/jhsu802701/rubyonracetracks"
         menu:
           - title: Home
             url: index.html

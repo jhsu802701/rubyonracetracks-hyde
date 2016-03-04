@@ -21,7 +21,7 @@ a:hover, a:focus {
 header {
     padding: 10px;
     font-weight: none;
-    background-color: Gainsboro;
+    background-color: #ffdcdc;
     color: black;
 }
 
@@ -36,7 +36,7 @@ header p {
 }
 
 nav {
-    background-color: black;
+    background-color: DarkRed;
 }
 
 nav a,
