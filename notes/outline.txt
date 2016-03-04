@@ -1,0 +1,20 @@
+CONTENT
+content
+|-- about.html
+|-- contact.html
+|-- index.html
+|-- media
+|   |-- css
+|   |   `-- style.css
+|   `-- img
+|       `-- email.jpg
+`-- meta.yaml
+
+3 directories, 6 files
+
+layout
+|-- base.j2
+|-- ga.j2
+`-- macros.j2
+
+0 directories, 3 files

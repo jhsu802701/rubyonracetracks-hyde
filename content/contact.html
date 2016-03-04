@@ -1,0 +1,22 @@
+---
+extends: base.j2
+title: Contact
+default_block: content
+---
+
+Contact
+=======
+
+Email:
+<br>
+<img src="media/img/email.jpg">
+
+
+
+{# You can use Jinja tags in Markdown content also; they get processed
+   before the content gets to the Markdown filter.
+#}
+[0]: {{ author.url }}
+[1]: {{ project.url }}
+[2]: {{ project.install }}
+[3]: {{ layout.url }}

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+html, body {
+    color: black;
+    background-color: WhiteSmoke;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 10px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+header {
+    padding: 10px;
+    font-weight: none;
+    background-color: Gainsboro;
+    color: black;
+}
+
+header h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+nav {
+    background-color: black;
+}
+
+nav a,
+nav a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+
+nav a.selected {
+    color: #888;
+}
+
+nav a:hover {
+    color: #f1ee00;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 10px;
+}
+
+#content {
+    line-height: 1.5em;
+}
+
+#content h1 {
+    font-weight: normal;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#content h2 {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#content code {
+    display: block;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid #444;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #222;
+    border-left: 1px solid #111;
+}
+
+footer {
+	font-size: 12px;
+}
