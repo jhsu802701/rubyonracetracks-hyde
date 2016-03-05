@@ -22,15 +22,9 @@
             {{ macros.render_basic_menu() }}
 			</nav>
         </header>
-        <article id="content">
-        {# Main content block. Notice it has to pass through the
-           Markdown filter to generate HTML. If a block in content
-           pages contains only markup, you can omit the filter.
-        #}
-            {% filter markdown -%}
+
+        {# Main content block #}
             {% block content %}{% endblock %}
-            {%- endfilter %}
-        </article>
 
         {# Some parts of the web are not needed for development and can
            wait for production (e.g. analytics). They can be included in

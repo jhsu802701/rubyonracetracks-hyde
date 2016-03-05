@@ -4,16 +4,49 @@ title: About
 default_block: content
 ---
 
-About
-=====
+<h1>About</h1>
 
-Ruby on Racetracks is a group of methods and procedures used to start Ruby on Rails projects much more quickly.  The stock procedures are slow to implement, and Ruby on Rails can be so finicky that just starting a project can feel like getting the planets to align.  Ruby on Racetracks doubles down on the shortcuts, automation, sanity checks, quality control, and other tools needed to streamline the process of working on a Ruby on Rails project.
+Ruby on Racetracks is a group of methods and procedures used to start Ruby on Rails projects much more quickly.  There are so many opportunities to get derailed under traditional procedures.  While ambitious projects require lots of hard work, basic and routine tasks should be quick and easy to implement.  The stock procedures are slow to implement, and Ruby on Rails can be so finicky that just starting a project can feel like getting the planets to align.  Ruby on Racetracks doubles down on the shortcuts, automation, sanity checks, quality control, and other tools needed to streamline the process of working on a high quality Ruby on Rails project.
 
+<h2>What's wrong with the traditional procedures?</h2>
+
+<ul>
+  <li>
+  Installing Ruby on Rails manually on the host OS takes hours and requires babysitting long processes.  (You cannot start the next step until you have finished waiting for the previous long step to finish.)
+  </li>
+  <li>
+  If you don't already have the correct version of Rails installed for a project that you are working on, then you must endure the long process of waiting for it to install.
+  </li>
+  <li>
+  If you don't already have the correct version of Ruby installed for a project that you are working on, then you must endure the long process of waiting for that version of Ruby to be installed AND the long process of waiting for the correct version of Rails to be installed within that version of Ruby.
+  </li>
+  <li>
+  Ruby on Rails is subject to the infamous "works on Computer A but not Computer B" problem.  This can arise if the "gem install" command instead of the "bundle install" command is ever used to install Ruby gems.  This can also arise if someone forgot to install certain software that is required by the project.
+  </li>
+  <li>
+  Reinstalling Ruby on Rails can resolve the infamous "works on Computer A but not Computer B" problem.  Unfortunately, this isn't a viable option under traditional procedures due to the excessive amount of time and effort required.
+  </li>
+  <li>
+  Using the "rails new" command to start a project creates a very barebones project.  Creating a basic Drupal site with basic static pages (like the home page, about page, and contact page) and authentication for users and admins takes only a few minutes.  Doing the same thing in Ruby on Rails takes hours of time and occupies chapters 3 through 10 in the Rails Tutorial.
+  </li>
+  <li>
+  The slow and bureaucratic nature of the traditional procedures increases the temptation to skip testing in the name of meeting deadlines.  Unfortunately, history has been harsh on the people and teams who have neglected testing.  Details matter, especially when working with a technology as finicky as Ruby on Rails.  Skipping tests leads people to accidentally break the project they're working on without even realizing it.
+  </li>
+  <li>
+  There are too many things to remember to do without the aid of cheat sheets and automation scripts.
+  </li>
+</ul>
+
+<h2>Why is Ruby on Racetracks so much better?</h2>
+<ul>
+	<li>
+	It takes just a few minutes to install Ruby on Rails.  Instead of installing Ruby on Rails directly on the host OS, the Ruby on Racetracks way consists of using a software program called Docker to provide a software container with Ruby on Rails pre-installed.  You can bypass the long process of installing specific versions of Ruby and Rails for a project by using a custom Docker image that includes the appropriate versions.
+	</li>
+	<li>
+	It takes just a few seconds to reinstall Ruby on Rails.  If you are troubleshooting a project and wish to return to a fresh Ruby on Rails installation in order to rule out the possibility that a broken system is at fault, you can return to the original development environment in just a few seconds.  Reinstalling Ruby on Rails is also useful to prevent the "works on Machine A but not Machine B" problem, because it provides the opportunity to verify that the setup script and instructions are complete.
+	</li>
+</ul>
 
 {# You can use Jinja tags in Markdown content also; they get processed
    before the content gets to the Markdown filter.
 #}
-[0]: {{ author.url }}
-[1]: {{ project.url }}
-[2]: {{ project.install }}
-[3]: {{ layout.url }}
