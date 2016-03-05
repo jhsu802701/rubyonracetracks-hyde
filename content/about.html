@@ -45,6 +45,27 @@ Ruby on Racetracks is a group of methods and procedures used to start Ruby on Ra
 	<li>
 	It takes just a few seconds to reinstall Ruby on Rails.  If you are troubleshooting a project and wish to return to a fresh Ruby on Rails installation in order to rule out the possibility that a broken system is at fault, you can return to the original development environment in just a few seconds.  Reinstalling Ruby on Rails is also useful to prevent the "works on Machine A but not Machine B" problem, because it provides the opportunity to verify that the setup script and instructions are complete.
 	</li>
+	<li>
+	The process of creating a new Ruby gem is done by using a Ruby gem called GenericGem.  This gem enhances the "bundle gem" process by automatically adding the elements needed in all or most gems.
+	</li>
+	<li>
+	The process of creating a new Rails project is done by using a Ruby gem called GenericApp.  This gem creates a generic project from a pre-existing Rails project template that contains the elements needed in all or most projects, including authentication for users and admins.
+	</li>
+	<li>
+	Ruby on Racetracks uses a Bash script that performs a 1-step build process.  Just run a fresh Docker container, use the "git clone" command to download the source code to your development environment, and run this script to configure the system and run the tests in just one step and in just a few minutes.  Because the complete build process is contained in the source code for generating the Docker image and in the source code for this 1-step build script, every detail needed to run your project is documented, and you can make sure that the infamous "works on my machine" issue never happens on your watch.
+	</li>
+	<li>
+	Ruby on Racetracks uses a Bash script that automates the process of configuring the config/database.yml file and your PostgreSQL settings.  
+	</li>
+	<li>
+	Ruby on Racetracks uses additional Bash scripts for other routine tasks, such as testing the quality of the code and automatically providing outlines and diagrams of the MVC architecture.  There's even a Bash script for deploying your project to Heroku.  (As an added bonus, the comments in this script include a cheat sheet consisting of the steps needed to make the Heroku commands work.)
+	</li>
+	<li>
+	Ruby on Racetracks doubles down on the use of cheat sheets.  If you're not the Chuck Norris of memorizing details, this saves you time, because you don't have to keep searching the web for routine procedures.  Cheat sheets will help you with tasks like adding objects, configuring your local settings for Heroku, where to get badges for the README page, how to change the time zone, and how to change the time displays.
+	</li>
+	<li>
+	Ruby on Racetracks breaks down large steps in a project into much smaller pieces.  Given how complicated Ruby on Rails can be, this is important for minimizing confusion.
+	</li>
 </ul>
 
 {# You can use Jinja tags in Markdown content also; they get processed
