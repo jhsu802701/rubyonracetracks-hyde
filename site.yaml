@@ -32,6 +32,8 @@ context:
             url: index.html
           - title: About
             url: about.html
+          - title: Docker
+            url: docker.html
           - title: Contact
             url: contact.html
 

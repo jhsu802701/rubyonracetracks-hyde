@@ -1,0 +1,32 @@
+---
+extends: base.j2
+title: Docker
+default_block: content
+---
+
+<h1>Docker</h1>
+
+Docker provides a software container containing your desired development environment.  This development environment is independent of your host environment.  
+
+<h2>Docker vs. Alternatives</h2>
+<ul>
+	<li>
+		Docker vs. Ruby on Rails on the host OS: Manually installing Ruby on Rails directly in your host OS is time-consuming and requires babysitting long processes.  Reinstalling Ruby on Rails also takes a long time, which means that you're out of luck if you think you broke the system.
+	</li>
+	<li>
+		Docker vs. Ruby on Rails in VirtualBox: I originally used Ruby on Rails on a virtual machine through the VirtualBox software.  Using snapshots allowed me to return to a fresh Ruby on Rails installation, but I was delayed by waiting for the virtual machine to boot up, and the computing overhead of this virtual machine slowed down activity in both the virtual and host machines.  Furthermore, entering the virtual machine meant being cut off from the familiarity and convenience of my host machine.
+	</li>
+	<li>
+		Docker vs. Vagrant: Prior to learning to use Ruby on Rails in Docker, I was using Ruby on Rails in Vagrant.  Vagrant automates many of the processes of using VirtualBox, and it allows you to use the virtual machine with the use of your host machine tools.  However, you still have to wait for the virtual machine to boot up, and the virtual machine still has the computing overhead that slows everything down.
+	</li>
+	<li>
+		Docker provides the best of all worlds.  Like Vagrant and VirtualBox, it provides an independent development environment that you can reset to original conditions at will.  Like Vagrant, Docker allows you to interact with your virtual environment through the convenience and familiarity of tools in your host environment.  Unlike the case with Vagrant and VirtualBox, you bypass the need to wait for the virtual environment to boot up, and there is no virtual machine overhead to eat up computing hardware resources.   It's faster than Vagrant and VirtualBox, because there is no virtual machine or its associated overhead to slow down your host or virtual system.
+	</li>
+</ul>
+
+<h2>64-Bit vs. 32-Bit</h2>
+
+
+{# You can use Jinja tags in Markdown content also; they get processed
+   before the content gets to the Markdown filter.
+#}
