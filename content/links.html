@@ -1,10 +1,9 @@
-{# Use base.j2 template as a base and only provide values for placeholders
-   in this file.
-#}
-{% extends "base.j2" %}
+---
+extends: base.j2
+title: Links
+default_block: content
+---
 
-{# Markdown main content block. #}
-{% block content %}
 <h1>Links</h1>
 
 <h2>Theme Song</h2>
@@ -34,5 +33,3 @@ The "Not Exactly Hertz" commercials inspired my slogan for Ruby on Racetracks.
 			src="http://www.youtube.com/embed/EuOHHA0KTww">
 		</iframe>		
 </ul>
-
-{% endblock %}
