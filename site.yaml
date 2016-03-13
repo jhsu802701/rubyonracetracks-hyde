@@ -34,6 +34,8 @@ context:
             url: about.html
           - title: Docker
             url: docker.html
+          - title: MVC
+            url: mvc.html
           - title: Cheat Sheet
             url: cheatsheet.html
           - title: Links
