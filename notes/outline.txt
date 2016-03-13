@@ -2,7 +2,9 @@ CONTENT
 content
 |-- about.html
 |-- contact.html
+|-- docker.html
 |-- index.html
+|-- links.html
 |-- media
 |   |-- css
 |   |   `-- style.css
@@ -10,7 +12,7 @@ content
 |       `-- email.jpg
 `-- meta.yaml
 
-3 directories, 6 files
+3 directories, 8 files
 
 layout
 |-- base.j2

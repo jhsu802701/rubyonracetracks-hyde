@@ -1,0 +1,38 @@
+{# Use base.j2 template as a base and only provide values for placeholders
+   in this file.
+#}
+{% extends "base.j2" %}
+
+{# Markdown main content block. #}
+{% block content %}
+<h1>Links</h1>
+
+<h2>Theme Song</h2>
+The unofficial theme song for Ruby on Racetracks is "Break My Stride" by Matthew Wilder.  Although Ruby is red instead of green, and this site's slogan parodies a different rental car company, this National Car Rental commercial summarizes what Ruby on Racetracks is about.
+<iframe src="https://player.vimeo.com/video/101956515?color=f15a29&title=0&byline=0&portrait=0" width="500" height="372" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/101956515">National Car Rental - Green Means Go</a> from <a href="https://vimeo.com/user25066752">Industri</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<h2>"Not Exactly Hertz" commercials</h2>
+The "Not Exactly Hertz" commercials inspired my slogan for Ruby on Racetracks.
+<ul>
+	<li>
+		<a href="http://www.adforum.com/creative-work/ad/player/28426/johnson/hertz">Johnson</a>: Is he buying it?  Not exactly.
+	</li>
+	<li>
+		<a href="http://www.adforum.com/creative-work/ad/player/28423/boss/hertz">Boss</a>:
+		Still counting on that promotion?  Not exactly.
+	</li>
+	<li>
+		<a href="http://www.adforum.com/creative-work/ad/player/28425/horserace/hertz">Horserace</a>: The executives are at the gate . . . . .
+	</li>
+	<li>Vacation: Honey, this is not exactly Hertz, OK?</li>
+		<iframe width="420" height="315"
+			src="http://www.youtube.com/embed/OmLtaJjfz2Y">
+		</iframe>
+	<li>Jeff Dunham: So you still think I'm the dummy?</li>
+		<iframe width="420" height="315"
+			src="http://www.youtube.com/embed/EuOHHA0KTww">
+		</iframe>		
+</ul>
+
+{% endblock %}
