@@ -6,25 +6,33 @@ default_block: content
 
 <h1>Docker</h1>
 
-Docker provides a software container containing your desired development environment.  This development environment is independent of your host environment.  
+<h2><a href="docker-why.html">Why Use Docker?</a></h2>
 
-<h2>Docker vs. Alternatives</h2>
+<h2>Repositories for Using Docker</h2>
 <ul>
 	<li>
-		Docker vs. Ruby on Rails on the host OS: Manually installing Ruby on Rails directly in your host OS is time-consuming and requires babysitting long processes.  Reinstalling Ruby on Rails also takes a long time, which means that you're out of luck if you think you broke the system.
+		<a href="https://github.com/jhsu802701/docker-64bit-debian-jessie">https://github.com/jhsu802701/docker-64bit-debian-jessie</a>
 	</li>
 	<li>
-		Docker vs. Ruby on Rails in VirtualBox: I originally used Ruby on Rails on a virtual machine through the VirtualBox software.  Using snapshots allowed me to return to a fresh Ruby on Rails installation, but I was delayed by waiting for the virtual machine to boot up, and the computing overhead of this virtual machine slowed down activity in both the virtual and host machines.  Furthermore, entering the virtual machine meant being cut off from the familiarity and convenience of my host machine.
-	</li>
-	<li>
-		Docker vs. Vagrant: Prior to learning to use Ruby on Rails in Docker, I was using Ruby on Rails in Vagrant.  Vagrant automates many of the processes of using VirtualBox, and it allows you to use the virtual machine with the use of your host machine tools.  However, you still have to wait for the virtual machine to boot up, and the virtual machine still has the computing overhead that slows everything down.
-	</li>
-	<li>
-		Docker provides the best of all worlds.  Like Vagrant and VirtualBox, it provides an independent development environment that you can reset to original conditions at will.  Like Vagrant, Docker allows you to interact with your virtual environment through the convenience and familiarity of tools in your host environment.  Unlike the case with Vagrant and VirtualBox, you bypass the need to wait for the virtual environment to boot up, and there is no virtual machine overhead to eat up computing hardware resources.   It's faster than Vagrant and VirtualBox, because there is no virtual machine or its associated overhead to slow down your host or virtual system.
+		<a href="https://github.com/jhsu802701/docker-32bit-debian-jessie">https://github.com/jhsu802701/docker-32bit-debian-jessie</a>
 	</li>
 </ul>
 
 <h2>64-Bit vs. 32-Bit</h2>
+<ul>
+	<li>
+		Don't try to mix-and-match 32-bit and 64-bit systems.  Use a 64-bit host OS and 64-bit Docker images, or use a 32-bit host OS and 32-bit Docker images.
+	</li>
+	<li>I recommend the use of a 64-bit host OS and 64-bit Docker images.</li>
+		<ul>
+			<li>Tools like Kitematic, Docker Machine, and Docker Hub's automated builds are built for 64-bit users.  For example, I found that Docker Hub's automated build was unable to install Chef on a 32-bit system, because it insisted on trying to install the 64-bit version.</li>
+			<li>Some projects use software that is only available for 64-bit systems.  For example, [rubygems.org](https://github.com/rubygems/rubygems.org) uses toxiproxy, which is not available for 32-bit systems.</li>
+			<li>Don't use a 32-bit Docker image on a 64-bit system.  I found that PostgreSQL in my 32-bit Docker images did not work on my 64-bit Mac.  I also found that tmux in my 32-bit Docker images did not work in 64-bit Linux on my desktop PC.</li>
+		</ul>
+	<li>
+		If your host machine does not support 64-bit hosts, or if the processor in your host machine does not support the VT-x or AMD-V standards for virtualization, then you should only use a 32-bit host OS and 32-bit Docker images on that machine.
+	</li>
+</ul>
 
 
 {# You can use Jinja tags in Markdown content also; they get processed

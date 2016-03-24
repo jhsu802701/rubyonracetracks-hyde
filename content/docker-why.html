@@ -1,0 +1,66 @@
+---
+extends: base.j2
+title: Docker
+default_block: content
+---
+
+<h1>Why is Docker so great?</h1>
+
+Docker provides a software container containing your desired development environment.  This development environment is independent of your host environment.  It takes only a few minutes to install a Docker image with pre-installed Ruby on Rails, and it only takes a few SECONDS to reinstall Ruby on Rails.
+
+<h2>Reasons to Reinstall Ruby on Rails</h2>
+<ul>
+	<li>
+		It allows you to prevent the infamous "Works on My Machine" problem that can occur during deployment or when setting up a project on another machine.  This is especially important if your project has special dependencies in addition to Ruby on Rails.  Your project requires more than the source code - it requires that the underlying system to also be set up properly, and it won't work without these dependencies.  Reinstalling Ruby on Rails allows you to make sure that you have included all dependencies in your gemspec/Gemfile or in the setup instructions.  The combination of the source code used to create the underlying Docker image, your project's gemspec/Gemfile, and your project's setup scripts/instructions document the entire process of going from zero to fully operational.  If you are not on top of this entire process, you are at risk for the infamous "Works On My Machine" problem.
+	</li>
+	<li>
+		If strange things happen in your development environment, or if you have any reason to believe that you broke Ruby on Rails, reinstalling Ruby on Rails is an alternative to endless troubleshooting.  In fact, the extremely quick and efficient process of returning to your original Docker image with pre-installed Ruby on Rails is itself a troubleshooting tool, because it allows you to eliminate a broken development environment as a culprit for weird or unexpected behavior.
+	</li>
+</ul>
+
+<h2>Reasons for Project-Specific Docker Images</h2>
+<ul>
+	<li>
+		There are numerous versions of Ruby and Rails, and installing every version of both would be excessively time-consuming and make the Docker image excessively large.
+	</li>
+	<li>
+		Each project requires different specific versions of Ruby and Rails.  While you can install the correct versions of Ruby and Rails if they are not already present, the process is time-consuming.
+	</li>
+	<li>
+		As a result, I provide project-specific Docker images that contain the correct versions of Ruby, the rails gem, the pg gem, and the nokogiri gem.  In addition, I provide the versions of Ruby and these basic gems that the project is most likely to upgrade to.  This makes the process of building the project a quick and efficient one that minimizes the waiting.
+	</li>
+</ul>
+
+<h2>Benefits</h2>
+<ul>
+	<li>
+		It's easy to keep on top of every dependency of a given Ruby gem or Rails project.  If reinstalling Ruby on Rails is an excessive burden, then the process of keeping on top of all dependencies is much more likely to be neglected, and this greatly increases the risk of the "Works On My Machine" problem.
+	</li>
+	<li>
+		Every member of a team can have the same development, regardless of the underlying host OS.  The Docker setup is available for Windows, OS X, and Linux users.
+	</li>
+	<li>
+		At an event like Startup Weekend or a 24-hour Web Site Challenge, it takes only a few minutes to set up a Ruby on Rails environment for every member who needs it.
+	</li>
+</ul>
+
+<h2>Docker vs. Alternatives</h2>
+<ul>
+	<li>
+		Docker vs. Ruby on Rails on the host OS: Manually installing Ruby on Rails directly in your host OS is time-consuming and requires babysitting long processes.  Reinstalling Ruby on Rails also takes a long time, which means that you're out of luck if you think you broke the system.
+	</li>
+	<li>
+		Docker vs. Ruby on Rails in VirtualBox: I originally used Ruby on Rails on a virtual machine through the VirtualBox software.  Using snapshots allowed me to return to a fresh Ruby on Rails installation, but I was delayed by waiting for the virtual machine to boot up, and the computing overhead of this virtual machine slowed down activity in both the virtual and host machines.  Furthermore, entering the virtual machine meant being cut off from the familiarity and convenience of my host machine.
+	</li>
+	<li>
+		Docker vs. Vagrant: Prior to learning to use Ruby on Rails in Docker, I was using Ruby on Rails in Vagrant.  Vagrant automates many of the processes of using VirtualBox, and it allows you to use the virtual machine with the use of your host machine tools.  However, you still have to wait for the virtual machine to boot up, and the virtual machine still has the computing overhead that slows everything down.
+	</li>
+	<li>
+		Docker provides the best of all worlds.  Like Vagrant and VirtualBox, it provides an independent development environment that you can reset to original conditions at will.  Like Vagrant, Docker allows you to interact with your virtual environment through the convenience and familiarity of tools in your host environment.  Unlike the case with Vagrant and VirtualBox, you bypass the need to wait for the virtual environment to boot up, and there is no virtual machine overhead to eat up computing hardware resources.   It's faster than Vagrant and VirtualBox, because there is no virtual machine or its associated overhead to slow down your host or virtual system.
+	</li>
+</ul>
+
+
+{# You can use Jinja tags in Markdown content also; they get processed
+   before the content gets to the Markdown filter.
+#}
