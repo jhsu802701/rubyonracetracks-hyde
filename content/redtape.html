@@ -1,0 +1,51 @@
+---
+extends: base.j2
+title: About
+default_block: content
+---
+
+<h1>Ruby on Red Tape</h1>
+
+<h2>What's wrong with the traditional procedures?</h2>
+<ul>
+	<li>Many of the traditional procedures used in Ruby on Rails involve long processes.</li>
+	<li>Some of these require babysitting processes.  It's one thing for a long process to proceed without your intervention.  It's even worse when a process cannot proceed without your intervention.  Installing Windows is a classic example of this.</li>
+	<li>It adds insult to injury when a long process fails.  At least when a short process fails, it doesn't take up that much time, you don't have to wait to see the failure, and you can take corrective action that much sooner.</li>
+	<li>When routine maintenance requires long processes, the temptation to neglect maintenance is greatly magnified.</li>
+</ul>
+
+<h2>Installing Ruby on Ruby on Rails</h2>
+<ul>
+  <li>
+  Installing Ruby on Rails manually on the host OS takes hours and requires babysitting long processes.  (You cannot start the next step until you have finished waiting for the previous long step to finish.)
+  </li>
+  <li>
+  If you don't already have the correct version of the Rails gem installed for a project that you are working on, then you must endure the long process of waiting for it to install.
+  </li>
+  <li>
+  If you don't already have the correct version of Ruby installed for a project that you are working on, then you must endure the long process of waiting for that version of Ruby to be installed AND the long process of waiting for the correct version of Rails to be installed within that version of Ruby.
+  </li>
+  <li>
+  Ruby on Rails is subject to the infamous "Works on My Machine" problem.  This can arise if the "gem install" command instead of the "bundle install" command is ever used to install Ruby gems.  You will also encounter this problem if you forget to install external dependencies - software that is required to run the project but is not a Ruby gem.  For example, the pg gem does not work if you forgot to install the PostgreSQL software on your system, and the sqlite3 gem does not work if you forgot to install the SQLite software on your system.
+  </li>
+</ul>
+
+<h2>Reinstalling Ruby on Rails</h2>
+Reinstalling Ruby on Rails can resolve the infamous "works on Computer A but not Computer B" problem.  Unfortunately, this isn't a viable option under traditional procedures due to the excessive amount of time and effort required.  After you get rid of rvm, rbenv, or similar software, you must repeat the long process of installing Ruby on Rails.
+
+<h2>Starting Ruby Gems</h2>
+Creating a Ruby gem is not a difficult process, but there are numerous details to take care of.  When you use the "bundle" command to start a new gem, many basic details are excluded.  These details include your name and email address in the expected places and code quality testing gems.
+
+<h2>Starting Rails Projects</h2>
+<ul>
+	<li>Using the "rails new" command to start a project creates a very barebones project.  Creating a basic Drupal site with basic static pages (like the home page, about page, and contact page) and authentication for users and admins takes only a few minutes.  Doing the same thing in Ruby on Rails takes hours of time and occupies chapters 3 through 10 in the Rails Tutorial.</li>
+	<li>The slow and bureaucratic nature of the traditional procedures increases the temptation to skip testing and cut corners on quality in the name of meeting deadlines.  Unfortunately, history has been harsh on the people and teams who have neglected testing and quality control.  Details matter, especially when working with a technology as finicky as Ruby on Rails.  Skipping tests leads people to accidentally break the project they're working on without even realizing it.</li>
+	<li>There are too many things to remember to do without the aid of cheat sheets and automation scripts.</li>
+</ul>
+
+<h2>Summarizing Rails Projects</h2>
+Ruby on Rails is complex and finicky.  One of the first things one needs to do in a Rails project is gain a general understanding of it.  Trying to read through all of the files all at once makes my head spin.  Under the traditional methods, there is no automated process for summarizing Rails projects.
+
+{# You can use Jinja tags in Markdown content also; they get processed
+   before the content gets to the Markdown filter.
+#}

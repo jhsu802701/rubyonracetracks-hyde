@@ -15,9 +15,10 @@ content
 |-- meta.yaml
 |-- mvc.html
 |-- prerequisites.html
+|-- redtape.html
 `-- templates.html
 
-3 directories, 13 files
+3 directories, 14 files
 
 layout
 |-- base.j2
