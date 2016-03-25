@@ -14,9 +14,10 @@ content
 |       `-- email.jpg
 |-- meta.yaml
 |-- mvc.html
-`-- prerequisites.html
+|-- prerequisites.html
+`-- templates.html
 
-3 directories, 12 files
+3 directories, 13 files
 
 layout
 |-- base.j2
