@@ -1,6 +1,7 @@
 CONTENT
 content
 |-- about.html
+|-- benefits.html
 |-- cheatsheet.html
 |-- contact.html
 |-- docker-why.html
@@ -18,7 +19,7 @@ content
 |-- redtape.html
 `-- templates.html
 
-3 directories, 14 files
+3 directories, 15 files
 
 layout
 |-- base.j2
