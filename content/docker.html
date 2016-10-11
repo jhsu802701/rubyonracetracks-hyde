@@ -11,10 +11,7 @@ default_block: content
 <h2>Repositories for Using Docker</h2>
 <ul>
 	<li>
-		<a href="https://github.com/jhsu802701/docker-64bit-debian-jessie">https://github.com/jhsu802701/docker-64bit-debian-jessie</a>
-	</li>
-	<li>
-		<a href="https://github.com/jhsu802701/docker-32bit-debian-jessie">https://github.com/jhsu802701/docker-32bit-debian-jessie</a>
+		<a href="https://github.com/jhsu802701/docker-debian-jessie">https://github.com/jhsu802701/docker-debian-jessie</a>
 	</li>
 </ul>
 
@@ -26,7 +23,7 @@ default_block: content
 	<li>I recommend the use of a 64-bit host OS and 64-bit Docker images.</li>
 		<ul>
 			<li>Tools like Kitematic, Docker Machine, and Docker Hub's automated builds are built for 64-bit users.  For example, I found that Docker Hub's automated build was unable to install Chef on a 32-bit system, because it insisted on trying to install the 64-bit version.</li>
-			<li>Some projects use software that is only available for 64-bit systems.  For example, [rubygems.org](https://github.com/rubygems/rubygems.org) uses toxiproxy, which is not available for 32-bit systems.</li>
+			<li>Some projects use software that is only available for 64-bit systems.  For example, <a href="https://github.com/rubygems/rubygems.org">rubygems.org</a> uses toxiproxy, which is not available for 32-bit systems.</li>
 			<li>Don't use a 32-bit Docker image on a 64-bit system.  I found that PostgreSQL in my 32-bit Docker images did not work on my 64-bit Mac.  I also found that tmux in my 32-bit Docker images did not work in 64-bit Linux on my desktop PC.</li>
 		</ul>
 	<li>
